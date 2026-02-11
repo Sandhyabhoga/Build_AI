@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+#Project Setup & Development Guide
+#Project Info
 
-## Project info
+This is a modern web application built using a Vite + React stack and developed locally using Visual Studio Code (VS Code).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+#How can I edit this code?
 
-## How can I edit this code?
+You can fully develop and manage this project locally using VS Code or any preferred IDE.
 
-There are several ways of editing your application.
+#Prerequisites
 
-**Use Lovable**
+Make sure the following are installed on your system:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Node.js (v18 or above recommended)
 
-Changes made via Lovable will be committed automatically to this repo.
+npm (comes with Node.js)
 
-**Use your preferred IDE**
+Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Visual Studio Code
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Recommended: Install Node.js using nvm
+https://github.com/nvm-sh/nvm#installing-and-updating
 
-Follow these steps:
+#Run the Project Locally (VS Code)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Follow these steps to run the project on your local machine:
+
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate into the project folder
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+#After running the server, open your browser and visit:
 
-**Use GitHub Codespaces**
+http://localhost:5173
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+The application supports hot reload, so changes will reflect instantly.
 
-This project is built with:
+#Editing the Code
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Open the project folder in VS Code
 
-## How can I deploy this project?
+Modify files inside the src/ directory
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Save changes to see real-time updates in the browser
 
-## Can I connect a custom domain to my Lovable project?
+Recommended VS Code extensions:
 
-Yes, you can!
+ES7+ React Snippets
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Tailwind CSS IntelliSense
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Prettier
+
+ESLint
+
+Project Technologies
+
+This project uses the following technologies:
+
+Vite – Fast build tool
+
+React – Frontend framework
+
+TypeScript – Type-safe JavaScript
+
+Tailwind CSS – Utility-first styling
+
+shadcn/ui – Reusable UI components
+
+Build for Production
+
+To create an optimized production build:
+
+npm run build
+
+
+The build files will be generated in the dist/ folder.
+
+Deployment
+
+You can deploy the dist/ folder to any hosting platform such as:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+Firebase Hosting
+
+AWS / Azure
+
+Example (Vercel):
+
+vercel deploy
+
+Custom Domain
+
+If deploying to platforms like Vercel or Netlify, you can easily connect a custom domain through their dashboard settings.
+
+Version Control
+
+After making changes:
+
+git add .
+git commit -m "Updated project"
+git push
