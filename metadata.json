@@ -1,0 +1,8 @@
+
+{
+  "name": "BuildWise AI",
+  "description": "Generative AI Smart Construction Architect for cost estimation, layout planning, and construction insights with voice-enabled AI assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
